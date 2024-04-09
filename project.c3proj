@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
