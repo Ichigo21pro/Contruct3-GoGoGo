@@ -1,5 +1,76 @@
 {
 	"name": "Event sheet 2",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 716843035186852
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "PlayerAnimation",
+					"sid": 171312648076449,
+					"parameters": {
+						"x": "PlayerHitBox.x",
+						"y": "PlayerHitBox.Y"
+					}
+				}
+			],
+			"sid": 349422646371795
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 355709649130310,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "PlayerAnimation",
+					"sid": 792995923009597,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 219631673945865
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 810752704960846,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "PlayerAnimation",
+					"sid": 802055287037803,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 970676722615670
+		}
+	],
 	"sid": 222418204673232
 }
