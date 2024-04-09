@@ -1,5 +1,80 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 112977428729253
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "DUDE",
+					"sid": 212667304762543,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "Self.Y +200",
+						"time": "2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "PlayBoron",
+					"sid": 532409542444710,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.Width*1.1",
+						"end-y": "Self.Height*1.1",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "yes",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 989278441750046
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 338683959696416,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "PlayBoron"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 261142812898026,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 516332145757199
+		}
+	],
 	"sid": 998006374309828
 }

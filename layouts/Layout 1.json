@@ -7,42 +7,73 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Tilemap",
+					"type": "PlayBoron",
 					"properties": {
 						"initially-visible": true,
-						"tile-width": 64,
-						"tile-height": 64,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 5,
 					"instanceVariables": {},
-					"behaviors": {},
-					"ownData": {
-						"tilemapData": {
-							"width": 63,
-							"height": 32,
-							"max-width": 147,
-							"max-height": 70,
-							"data": "30x0,68,67,68x0,69,89,68x0,69,67,68x0,69,89,68x0,69,67,68x0,70,67,69x0,233,69x0,233,68x0,68,89,68x0,69,67,68x0,70,89,69x0,233,68x0,71,67,69x0,233,68x0,71,67,69x0,233,66x0,96,2x0,233,66x0,97,2x0,233,69x0,233,65x0,96,3x0,233,65x0,69,3x0,233,65x0,69,3x0,233,65x0,69,3x0,233,65x0,97,3x0,233,69x0,233,63x0,96,5x0,233,63x0,69,5x0,233,63x0,69,5x0,233,60x0,96,2x0,69,5x0,233,60x0,97,2x0,69,5x0,233,63x0,69,5x0,233,63x0,69,5x0,233,58x0,96,4x0,69,5x0,233,58x0,97,4x0,69,5x0,233,63x0,69,5x0,233,63x0,97,5x0,233,69x0,233,69x0,233,61x0,96,7x0,233,61x0,69,7x0,233,61x0,69,7x0,233,61x0,69,7x0,233,61x0,69,7x0,233,61x0,69,7x0,233,61x0,69,7x0,233,61x0,69,7x0,233,61x0,97,7x0,233,69x0,233,69x0,233,61x0,118,7x0,233,61x0,93,115,89,2x67,2x111,2x67,62x0,69,67,89,67,2x111,67,89,62x0,69,2x67,89,2x67,89,67,62x0,69,111,89,67,2x89,67,89,62x0,69,111,89,67,2x89,67,89,62x0,69,2x67,89,2x67,89,67,62x0,69,67,89,67,2x111,67,89,62x0,69,2x67,89,2x67,89,67,62x0,69,111,89,67,2x89,67,89,62x0,69,111,89,67,2x89,67,89,62x0,69,2x67,89,2x67,89,67,62x0,69,67,89,67,2x111,67,89,62x0,69,89,2x67,2x111,2x67,5918x0"
-						},
-						"tile-width": 64,
-						"tile-height": 64,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
 					},
 					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 4032,
-						"height": 2050,
+						"x": 434.72727272727303,
+						"y": 327.99999999999983,
+						"width": 238.1818181818171,
+						"height": 108.99999999999926,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "JUGAR YA!",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 24.300000000000022,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 349.06611570248003,
+						"y": 303.31404958677666,
+						"width": 172.1983471074371,
+						"height": 54.63636363636351,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -51,6 +82,42 @@
 							1,
 							1
 						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DUDE",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 8,
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 441,
+						"y": -34,
+						"width": 504,
+						"height": 71,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -94,5 +161,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 2"
+	"eventSheet": "Event sheet 1"
 }
