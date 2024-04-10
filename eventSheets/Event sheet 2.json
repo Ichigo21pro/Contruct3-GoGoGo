@@ -1216,6 +1216,71 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "PlayerHitBox",
+					"sid": 994698685634179,
+					"parameters": {
+						"object": "Dialog2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 172229617470236,
+					"parameters": {
+						"variable": "TerminoDialogo",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DiseñoSinTítulo",
+					"sid": 657141933629235,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "DialogText",
+					"sid": 415671335120774,
+					"parameters": {
+						"text": "\"Porfin !! hay tengo algo suculento, estaba el bosque más tranquilo de lo que pensaba... bueno ahora cojo la comida y devuelta para mi casa (a la puerta del mundo1)\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DialogText",
+					"sid": 840030563149122,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TipText",
+					"sid": 569432498316989,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PlayerDialog",
+					"sid": 692957032995973,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 484112789048206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
 					"sid": 787151700485248,
 					"parameters": {
 						"object": "PuertaVerdeCerrada"

@@ -135,7 +135,8 @@
 			"startDialog",
 			"PuertaCASAcerrada",
 			"PuertaCasa",
-			"comida"
+			"comida",
+			"Dialog2"
 		],
 		"subfolders": []
 	},
