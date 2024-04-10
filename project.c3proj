@@ -90,7 +90,9 @@
 			"PlayerHitBox",
 			"greenJewel",
 			"yellowGem",
-			"water"
+			"water",
+			"ScoreText",
+			"limitWater"
 		],
 		"subfolders": []
 	},

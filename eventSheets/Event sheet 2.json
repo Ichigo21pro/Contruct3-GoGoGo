@@ -29,6 +29,14 @@
 						"x": "PlayerHitBox.x",
 						"y": "PlayerHitBox.Y"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 132589095551781,
+					"parameters": {
+						"text": "\"Score: \"& Money"
+					}
 				}
 			],
 			"sid": 349422646371795
@@ -102,9 +110,109 @@
 						"variable": "Money",
 						"value": "1"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "yellowGem",
+					"sid": 791350154761776
 				}
 			],
 			"sid": 461570168087249
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "PlayerHitBox",
+					"sid": 454398846118605,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 219104516411036,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 438214947832331
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "PlayerHitBox",
+					"sid": 601556588038460,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 633700115394144,
+					"parameters": {
+						"animation": "\"walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 311651765792666
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-stopped",
+					"objectClass": "PlayerHitBox",
+					"sid": 497434849643804,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 833997824197319,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 837792969243432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "PlayerHitBox",
+					"sid": 954043196899736,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [],
+			"sid": 804091644078052
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "PlayerHitBox",
+					"sid": 861449583861377,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [],
+			"sid": 961538472683573
 		}
 	],
 	"sid": 222418204673232
