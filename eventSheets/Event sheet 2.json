@@ -172,6 +172,18 @@
 					"id": "destroy",
 					"objectClass": "yellowGem",
 					"sid": 791350154761776
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 212250935790075,
+					"parameters": {
+						"audio-file": "collectCoin",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 461570168087249
@@ -420,9 +432,43 @@
 						"width": "48.347107 ",
 						"height": "55.785124"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 486019434996080,
+					"parameters": {
+						"tag": "\"moving\""
+					}
 				}
 			],
 			"sid": 804091644078052
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "PlayerHitBox",
+					"sid": 170137343737155,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 296846623736274,
+					"parameters": {
+						"audio-file": "jump",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 810317012774019
 		},
 		{
 			"eventType": "block",
@@ -469,6 +515,18 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 222230210155360,
+					"parameters": {
+						"audio-file": "waterLimit",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "set-vector-y",
 					"objectClass": "PlayerHitBox",
@@ -650,6 +708,18 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 528779140731387,
+							"parameters": {
+								"audio-file": "GreeGem",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-fade-out-time",
 							"objectClass": "greenJewel",
 							"sid": 872486268431682,
@@ -738,7 +808,7 @@
 				{
 					"id": "start-fade",
 					"objectClass": "greenJewel",
-					"sid": 332403482982258,
+					"sid": 115832500656061,
 					"behaviorType": "Fade"
 				},
 				{
@@ -766,6 +836,18 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 428138911302918,
+					"parameters": {
+						"audio-file": "CollectKey",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "set-boolean-instvar",
 					"objectClass": "keyGreen",
@@ -799,6 +881,18 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 299415755853692,
+					"parameters": {
+						"audio-file": "OpenDoor",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "destroy",
 					"objectClass": "PuertaVerdeCerrada",
@@ -842,6 +936,36 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 278794273478042,
+					"parameters": {
+						"audio-file": "levelPass",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerAnimation",
+					"sid": 598313509863133
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerHitBox",
+					"sid": 921068212363273
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 603821585719576,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
