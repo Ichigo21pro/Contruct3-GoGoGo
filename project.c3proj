@@ -132,7 +132,10 @@
 			"DiseñoSinTítulo",
 			"DialogText",
 			"TipText",
-			"startDialog"
+			"startDialog",
+			"PuertaCASAcerrada",
+			"PuertaCasa",
+			"comida"
 		],
 		"subfolders": []
 	},
@@ -146,7 +149,8 @@
 		"items": [
 			"Layout 1",
 			"Layout 2",
-			"Layout 3"
+			"Layout 3",
+			"Layout 4"
 		],
 		"subfolders": []
 	},

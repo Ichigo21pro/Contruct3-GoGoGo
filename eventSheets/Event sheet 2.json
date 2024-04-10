@@ -32,6 +32,16 @@
 			"sid": 575905637215391
 		},
 		{
+			"eventType": "variable",
+			"name": "TieneComida",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 287471439531546
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -80,6 +90,38 @@
 					"parameters": {
 						"variable": "TerminoDialogo",
 						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DiseñoSinTítulo",
+					"sid": 661994641128738,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DialogText",
+					"sid": 930702787064896,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TipText",
+					"sid": 584472845322671,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PlayerDialog",
+					"sid": 997163234885067,
+					"parameters": {
+						"visibility": "visible"
 					}
 				}
 			],
@@ -1167,6 +1209,109 @@
 				}
 			],
 			"sid": 137988225749559
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 787151700485248,
+					"parameters": {
+						"object": "PuertaVerdeCerrada"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 423359796957477,
+					"parameters": {
+						"variable": "TieneComida"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 796413991692391,
+					"parameters": {
+						"audio-file": "OpenDoor",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PuertaCASAcerrada",
+					"sid": 102980686106056
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PuertaAbierta",
+					"sid": 377137259387030,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 584645833426777
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 951383541800697,
+					"parameters": {
+						"object": "PuertaCasa"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 801930587921926,
+					"parameters": {
+						"audio-file": "levelPass",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerAnimation",
+					"sid": 211614297407846
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerHitBox",
+					"sid": 682542599152357
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 541305354285599,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 377682712278393,
+					"parameters": {
+						"layout": "Layout 4"
+					}
+				}
+			],
+			"sid": 195266912170064
 		}
 	],
 	"sid": 222418204673232
