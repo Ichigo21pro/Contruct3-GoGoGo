@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 37900,
-	"name": "GoGoGO",
+	"name": "GoLetsGo",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
