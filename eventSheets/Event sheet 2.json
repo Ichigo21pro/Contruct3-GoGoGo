@@ -25,6 +25,18 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 760483766551431
+				}
+			],
+			"actions": [],
+			"sid": 683493719490479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 716843035186852
@@ -420,18 +432,126 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 119073070955953,
+			"children": [
 				{
-					"id": "set-vector-y",
-					"objectClass": "PlayerHitBox",
-					"sid": 878855550027015,
-					"behaviorType": "Platform",
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "greenJewel",
+							"sid": 618848420731583,
+							"parameters": {
+								"instance-variable": "GemaVerdeTocada"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-fade-out-time",
+							"objectClass": "greenJewel",
+							"sid": 518128363305167,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-out-time": "1"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "greenJewel",
+							"sid": 786313452663066,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "0"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "greenJewel",
+							"sid": 771826781586765,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "PlayerHitBox",
+							"sid": 424154584578248,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "-800"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "greenJewel",
+							"sid": 324163901142821,
+							"parameters": {
+								"instance-variable": "GemaVerdeTocada",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 283846840933706
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "greenJewel",
+					"sid": 598050277074747,
 					"parameters": {
-						"vector-y": "-500"
+						"instance-variable": "GemaVerdeTocada"
 					}
 				}
 			],
-			"sid": 119073070955953
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 390580903959553,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "greenJewel",
+					"sid": 693772125531945,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "1"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "greenJewel",
+					"sid": 139903362291257,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "0"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "greenJewel",
+					"sid": 620218532688721,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "greenJewel",
+					"sid": 212608731686742,
+					"parameters": {
+						"instance-variable": "GemaVerdeTocada",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 658690883117809
 		}
 	],
 	"sid": 222418204673232

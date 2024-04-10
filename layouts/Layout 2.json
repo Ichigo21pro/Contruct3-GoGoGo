@@ -528,8 +528,8 @@
 						}
 					},
 					"world": {
-						"x": 57,
-						"y": 1909,
+						"x": 3171,
+						"y": 1378,
 						"width": 48.347107438016195,
 						"height": 55.78512396694191,
 						"originX": 0.5,
@@ -554,8 +554,21 @@
 						"live-preview": false
 					},
 					"uid": 10,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"GemaVerdeTocada": true
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 1691,
 						"y": 1537,
@@ -583,8 +596,21 @@
 						"live-preview": false
 					},
 					"uid": 21,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"GemaVerdeTocada": true
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 3326,
 						"y": 1404,
@@ -612,8 +638,21 @@
 						"live-preview": false
 					},
 					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"GemaVerdeTocada": true
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": true
+							}
+						}
+					},
 					"world": {
 						"x": 3487,
 						"y": 1343,
@@ -641,8 +680,21 @@
 						"live-preview": false
 					},
 					"uid": 23,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"GemaVerdeTocada": true
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 3623,
 						"y": 1268,
@@ -670,8 +722,21 @@
 						"live-preview": false
 					},
 					"uid": 24,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"GemaVerdeTocada": true
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
 						"x": 3749,
 						"y": 1190,

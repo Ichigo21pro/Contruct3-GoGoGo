@@ -3,8 +3,22 @@
 	"plugin-id": "Sprite",
 	"sid": 513888423019689,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "GemaVerdeTocada",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 168372354762512
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 490878988860781
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
