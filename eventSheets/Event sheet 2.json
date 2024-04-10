@@ -12,6 +12,16 @@
 			"sid": 277774347140390
 		},
 		{
+			"eventType": "variable",
+			"name": "VidaJugador",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 119285330601334
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -337,6 +347,15 @@
 								"off-time": "0.1",
 								"duration": "1.5"
 							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 904618241113206,
+							"parameters": {
+								"variable": "VidaJugador",
+								"value": "1"
+							}
 						}
 					],
 					"sid": 859013402605889
@@ -365,6 +384,54 @@
 				}
 			],
 			"sid": 783030444057869
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 834925665011646,
+					"parameters": {
+						"variable": "VidaJugador",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 353448027543221
+				}
+			],
+			"sid": 497856194984873
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 710632649840829,
+					"parameters": {
+						"object": "greenJewel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-y",
+					"objectClass": "PlayerHitBox",
+					"sid": 878855550027015,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-500"
+					}
+				}
+			],
+			"sid": 119073070955953
 		}
 	],
 	"sid": 222418204673232
