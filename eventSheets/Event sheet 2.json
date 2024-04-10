@@ -2,6 +2,16 @@
 	"name": "Event sheet 2",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Money",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 277774347140390
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -70,6 +80,31 @@
 				}
 			],
 			"sid": 970676722615670
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 861492574830999,
+					"parameters": {
+						"object": "yellowGem"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 645048359634879,
+					"parameters": {
+						"variable": "Money",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 461570168087249
 		}
 	],
 	"sid": 222418204673232
