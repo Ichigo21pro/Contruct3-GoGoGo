@@ -4621,13 +4621,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.System.Cnds.CompareVar,
-		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Acts.GoToLayout,
 		C3.Behaviors.Fade.Acts.SetFadeOutTime,
 		C3.Behaviors.Fade.Acts.SetFadeInTime,
 		C3.Behaviors.Fade.Acts.StartFade,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
-		C3.Plugins.System.Acts.Wait,
-		C3.Plugins.System.Acts.GoToLayout,
 		C3.Behaviors.Tween.Acts.TweenTwoProperties,
 		C3.Plugins.Sprite.Exps.Width,
 		C3.Plugins.Sprite.Exps.Height,
@@ -4676,6 +4675,8 @@ self.C3_JsPropNameTable = [
 	{comida: 0},
 	{Dialog2: 0},
 	{PuertaMundo1: 0},
+	{PuertaCerrada: 0},
+	{Sprite: 0},
 	{Money: 0},
 	{VidaJugador: 0},
 	{TerminoDialogo: 0},
@@ -4713,7 +4714,9 @@ self.InstanceType = {
 	PuertaCasa: class extends self.ISpriteInstance {},
 	comida: class extends self.ISpriteInstance {},
 	Dialog2: class extends self.ISpriteInstance {},
-	PuertaMundo1: class extends self.ISpriteInstance {}
+	PuertaMundo1: class extends self.ISpriteInstance {},
+	PuertaCerrada: class extends self.ISpriteInstance {},
+	Sprite: class extends self.ISpriteInstance {}
 }
 }
 
@@ -4862,10 +4865,12 @@ self.C3_ExpressionFuncs = [
 		() => 0.1,
 		() => 1.5,
 		() => -500,
+		() => 0.5,
 		() => -800,
 		() => 2,
 		() => "Enserio?? nada de comida... Tendre que abrir la puerta para encontrar algo en el bosque...",
 		() => "Porfin !! encontre algo suculento, estaba el bosque más tranquilo de lo que pensaba... bueno ahora cojo la comida y devuelta para mi casa (a la puerta del mundo1)",
+		() => "press",
 		() => -20,
 		p => {
 			const n0 = p._GetNode(0);
@@ -4875,7 +4880,6 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() * 1.1);
 		},
-		() => 0.5,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() * 1.3);
