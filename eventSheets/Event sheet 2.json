@@ -127,10 +127,10 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 645048359634879,
+					"sid": 988986393910704,
 					"parameters": {
 						"variable": "Money",
-						"value": "1"
+						"value": "10"
 					}
 				},
 				{
