@@ -1312,6 +1312,48 @@
 				}
 			],
 			"sid": 195266912170064
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 691805990879879,
+					"parameters": {
+						"object": "comida"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 309212587698754,
+					"parameters": {
+						"audio-file": "CollectKey",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 672721040373332,
+					"parameters": {
+						"variable": "TieneComida",
+						"value": "true"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "comida",
+					"sid": 942597397671776
+				}
+			],
+			"sid": 249512459845723
 		}
 	],
 	"sid": 222418204673232
