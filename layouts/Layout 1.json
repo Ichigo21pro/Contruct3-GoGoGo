@@ -42,7 +42,7 @@
 					}
 				},
 				{
-					"type": "Text",
+					"type": "jugarYaText",
 					"properties": {
 						"text": "JUGAR YA!",
 						"enable-bbcode": true,

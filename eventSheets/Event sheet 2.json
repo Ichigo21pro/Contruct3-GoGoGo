@@ -198,7 +198,17 @@
 					"behaviorType": "Platform"
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 689355850773983,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				}
+			],
 			"sid": 804091644078052
 		},
 		{
@@ -211,8 +221,60 @@
 					"behaviorType": "Platform"
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 857716178119425,
+					"parameters": {
+						"animation": "\"fall\"",
+						"from": "beginning"
+					}
+				}
+			],
 			"sid": 961538472683573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 826747867636125,
+					"parameters": {
+						"object": "limitWater"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 114424074249589
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 358727118584415,
+					"parameters": {
+						"object": "enemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "PlayerAnimation",
+					"sid": 829566220439262,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.5"
+					}
+				}
+			],
+			"sid": 843683481649436
 		}
 	],
 	"sid": 222418204673232

@@ -43,6 +43,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -59,6 +66,13 @@
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -85,14 +99,15 @@
 			"Tilemap",
 			"PlayerAnimation",
 			"PlayBoron",
-			"Text",
+			"jugarYaText",
 			"DUDE",
 			"PlayerHitBox",
 			"greenJewel",
 			"yellowGem",
 			"water",
 			"ScoreText",
-			"limitWater"
+			"limitWater",
+			"enemy"
 		],
 		"subfolders": []
 	},
