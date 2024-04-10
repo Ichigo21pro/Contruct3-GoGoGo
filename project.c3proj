@@ -107,7 +107,8 @@
 			"water",
 			"ScoreText",
 			"limitWater",
-			"enemy"
+			"enemy",
+			"PuertaVerdeCerrada"
 		],
 		"subfolders": []
 	},

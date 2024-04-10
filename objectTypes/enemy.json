@@ -3,12 +3,25 @@
 	"plugin-id": "Sprite",
 	"sid": 766641126102060,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "VidaEnemigo",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 611267091123470
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 277787495232713
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 945512971988469
 		}
 	],
 	"effectTypes": [],

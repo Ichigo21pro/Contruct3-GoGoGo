@@ -246,7 +246,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-vector-y",
+					"objectClass": "PlayerHitBox",
+					"sid": 873468498897262,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-1000"
+					}
+				}
+			],
 			"sid": 114424074249589
 		},
 		{
@@ -261,20 +271,100 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 843683481649436,
+			"children": [
 				{
-					"id": "flash",
-					"objectClass": "PlayerAnimation",
-					"sid": 829566220439262,
-					"behaviorType": "Flash",
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-falling",
+							"objectClass": "PlayerHitBox",
+							"sid": 363129371830335,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "enemy",
+							"sid": 543182493495784,
+							"parameters": {
+								"instance-variable": "VidaEnemigo",
+								"value": "1"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "enemy",
+							"sid": 732091117210943,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.5"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "PlayerHitBox",
+							"sid": 871213115842147,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "-500"
+							}
+						}
+					],
+					"sid": 372070540356905
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 320007323734547
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "PlayerAnimation",
+							"sid": 474214245275174,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.5"
+							}
+						}
+					],
+					"sid": 859013402605889
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "enemy",
+					"sid": 717587501830026,
 					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "1.5"
+						"instance-variable": "VidaEnemigo",
+						"comparison": 3,
+						"value": "0"
 					}
 				}
 			],
-			"sid": 843683481649436
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "enemy",
+					"sid": 943792148654861
+				}
+			],
+			"sid": 783030444057869
 		}
 	],
 	"sid": 222418204673232
