@@ -985,18 +985,6 @@
 			],
 			"actions": [
 				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 912152075286081,
-					"parameters": {
-						"audio-file": "diePlayer",
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
 					"id": "destroy",
 					"objectClass": "PlayerAnimation",
 					"sid": 490276935704176
