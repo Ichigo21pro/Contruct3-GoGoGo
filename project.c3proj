@@ -118,7 +118,8 @@
 			"PuertaVerdeCerrada",
 			"PuertaAbierta",
 			"PuertaSiguenteMundo",
-			"keyGreen"
+			"keyGreen",
+			"VidaText"
 		],
 		"subfolders": []
 	},

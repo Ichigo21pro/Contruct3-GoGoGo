@@ -59,6 +59,14 @@
 					"parameters": {
 						"text": "\"Score: \"& Money"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "VidaText",
+					"sid": 928727616263600,
+					"parameters": {
+						"text": "\"Vida: \"& VidaJugador"
+					}
 				}
 			],
 			"sid": 349422646371795,
