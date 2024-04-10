@@ -528,8 +528,8 @@
 						}
 					},
 					"world": {
-						"x": 45,
-						"y": 1910,
+						"x": 134,
+						"y": 1919,
 						"width": 48.347107438016195,
 						"height": 55.78512396694191,
 						"originX": 0.5,
@@ -771,8 +771,8 @@
 						}
 					},
 					"world": {
-						"x": 48.73683763538581,
-						"y": 1845.1913985313256,
+						"x": 143,
+						"y": 1842,
 						"width": 45,
 						"height": 54,
 						"originX": 0.5,
@@ -2500,6 +2500,64 @@
 							1
 						],
 						"angle": 0.000986084921979824,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PuertaAbierta",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 141,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 31,
+						"y": 1825,
+						"width": 64,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PuertaMundo1",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 143,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 16,
+						"y": 1824,
+						"width": 49.40182650981342,
+						"height": 193.552606994622,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
