@@ -1,0 +1,52 @@
+{
+	"name": "keyGreen",
+	"plugin-id": "Sprite",
+	"sid": 690925492895240,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "LlaveCogida",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 455444684899735
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 169346889448461
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 164020,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 765430240777072,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

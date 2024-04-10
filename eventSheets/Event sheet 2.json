@@ -61,7 +61,34 @@
 					}
 				}
 			],
-			"sid": 349422646371795
+			"sid": 349422646371795,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "keyGreen",
+							"sid": 905637608665998,
+							"parameters": {
+								"instance-variable": "LlaveCogida"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "keyGreen",
+							"sid": 798397991606377,
+							"parameters": {
+								"x": "PlayerHitBox.x -30",
+								"y": "PlayerHitBox.y-55"
+							}
+						}
+					],
+					"sid": 803783828268103
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -717,6 +744,106 @@
 				}
 			],
 			"sid": 658690883117809
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 747564267377597,
+					"parameters": {
+						"object": "keyGreen"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "keyGreen",
+					"sid": 770812147294621,
+					"parameters": {
+						"instance-variable": "LlaveCogida",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 952043364862482
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 606711193992280,
+					"parameters": {
+						"object": "PuertaVerdeCerrada"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "keyGreen",
+					"sid": 863937444347889,
+					"parameters": {
+						"instance-variable": "LlaveCogida"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PuertaVerdeCerrada",
+					"sid": 717155226941163
+				},
+				{
+					"id": "destroy",
+					"objectClass": "keyGreen",
+					"sid": 953447827645700
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "keyGreen",
+					"sid": 179228926075037,
+					"parameters": {
+						"instance-variable": "LlaveCogida",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PuertaAbierta",
+					"sid": 413774006739397,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 810878752422339
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 475758107316125,
+					"parameters": {
+						"object": "PuertaSiguenteMundo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 270309363837374,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 728195561190853
 		}
 	],
 	"sid": 222418204673232

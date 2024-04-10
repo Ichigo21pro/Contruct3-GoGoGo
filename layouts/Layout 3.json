@@ -1,5 +1,5 @@
 {
-	"name": "Layout 2",
+	"name": "Layout 3",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 25,
+					"uid": 34,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -59,7 +59,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 20,
+					"uid": 35,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -103,7 +103,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 19,
+					"uid": 36,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -147,7 +147,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 18,
+					"uid": 37,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -191,7 +191,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 15,
+					"uid": 38,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -235,7 +235,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 16,
+					"uid": 39,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -279,7 +279,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 17,
+					"uid": 40,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -323,7 +323,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 11,
+					"uid": 41,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -367,7 +367,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 12,
+					"uid": 42,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -411,7 +411,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 13,
+					"uid": 43,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -455,7 +455,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 14,
+					"uid": 44,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -499,7 +499,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 9,
+					"uid": 45,
 					"instanceVariables": {},
 					"behaviors": {
 						"Platform": {
@@ -528,8 +528,8 @@
 						}
 					},
 					"world": {
-						"x": 3984,
-						"y": 1104,
+						"x": 45,
+						"y": 1910,
 						"width": 48.347107438016195,
 						"height": 55.78512396694191,
 						"originX": 0.5,
@@ -553,7 +553,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 10,
+					"uid": 46,
 					"instanceVariables": {
 						"GemaVerdeTocada": true
 					},
@@ -595,7 +595,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 21,
+					"uid": 47,
 					"instanceVariables": {
 						"GemaVerdeTocada": true
 					},
@@ -637,7 +637,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 22,
+					"uid": 48,
 					"instanceVariables": {
 						"GemaVerdeTocada": true
 					},
@@ -679,7 +679,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
+					"uid": 49,
 					"instanceVariables": {
 						"GemaVerdeTocada": true
 					},
@@ -721,7 +721,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 24,
+					"uid": 50,
 					"instanceVariables": {
 						"GemaVerdeTocada": true
 					},
@@ -763,7 +763,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 6,
+					"uid": 51,
 					"instanceVariables": {},
 					"behaviors": {
 						"Flash": {
@@ -796,7 +796,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 28,
+					"uid": 52,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -825,7 +825,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 29,
+					"uid": 53,
 					"instanceVariables": {
 						"VidaEnemigo": 2
 					},
@@ -874,7 +874,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 26,
+					"uid": 54,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -908,7 +908,7 @@
 						"tile-y-drawing-offset": 0,
 						"drawing-mode": "top-to-right"
 					},
-					"uid": 4,
+					"uid": 55,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -958,7 +958,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 30,
+					"uid": 56,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -994,7 +994,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 31,
+					"uid": 57,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1023,7 +1023,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 32,
+					"uid": 58,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1052,7 +1052,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 33,
+					"uid": 59,
 					"instanceVariables": {
 						"LlaveCogida": false
 					},
@@ -1090,7 +1090,7 @@
 					}
 				}
 			],
-			"sid": 719346670204761,
+			"sid": 268966200586857,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -1149,7 +1149,7 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 27,
+					"uid": 60,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1170,7 +1170,7 @@
 					}
 				}
 			],
-			"sid": 753605195320923,
+			"sid": 958580459766798,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -1200,7 +1200,7 @@
 			"global": false
 		}
 	],
-	"sid": 466001891214736,
+	"sid": 911435777216498,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 4032,
