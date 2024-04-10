@@ -14,14 +14,14 @@
 	],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 277787495232713
-		},
-		{
 			"behaviorId": "Flash",
 			"name": "Flash",
 			"sid": 945512971988469
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 752398297486859
 		}
 	],
 	"effectTypes": [],
@@ -33,7 +33,7 @@
 						"width": 32,
 						"height": 44,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -74,7 +74,7 @@
 						"width": 32,
 						"height": 42,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -110,27 +110,16 @@
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
-					}
-				],
-				"sid": 489210248719288,
-				"name": "walk",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
+					},
 					{
 						"width": 49,
 						"height": 38,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6558413,
+						"imageSpriteId": 2367325,
 						"collisionPoly": {
 							"points": [
 								0.40816326530612246,
@@ -164,53 +153,12 @@
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
-					},
-					{
-						"width": 35,
-						"height": 41,
-						"originX": 0.5,
-						"originY": 1,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"imageSpriteId": 1130165,
-						"collisionPoly": {
-							"points": [
-								0.34285714285714286,
-								0,
-								0.6285714285714286,
-								0,
-								0.7428571428571429,
-								0.04878048780487805,
-								0.8857142857142857,
-								0.17073170731707318,
-								0.9428571428571428,
-								0.2682926829268293,
-								1,
-								0.9024390243902439,
-								1,
-								0.9512195121951219,
-								0.9428571428571428,
-								1,
-								0.02857142857142857,
-								0.975609756097561,
-								0.02857142857142857,
-								0.2682926829268293,
-								0.08571428571428572,
-								0.17073170731707318,
-								0.22857142857142856,
-								0.04878048780487805
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
 					}
 				],
-				"sid": 170442457315346,
-				"name": "die",
-				"isLooping": false,
-				"isPingPong": false,
+				"sid": 489210248719288,
+				"name": "walk",
+				"isLooping": true,
+				"isPingPong": true,
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5

@@ -42,6 +42,16 @@
 			"sid": 287471439531546
 		},
 		{
+			"eventType": "variable",
+			"name": "VieneMundo2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 178584015773399
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -125,7 +135,110 @@
 					}
 				}
 			],
-			"sid": 683493719490479
+			"sid": 683493719490479,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 888960714850697,
+							"parameters": {
+								"variable": "VieneMundo2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PlayerHitBox",
+							"sid": 668107595711256,
+							"parameters": {
+								"x": "3859",
+								"y": " 1514"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 351684391917193,
+							"parameters": {
+								"variable": "TerminoDialogo",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DiseñoSinTítulo",
+							"sid": 737233520866217,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DialogText",
+							"sid": 845743048355593,
+							"parameters": {
+								"text": "\"Que!!! porque hay monstruos aqui!!! Mi casa!!!\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DialogText",
+							"sid": 652553728464706,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TipText",
+							"sid": 180534178367591,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PlayerDialog",
+							"sid": 845342862539601,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "startDialog",
+							"sid": 846848699440690
+						},
+						{
+							"id": "destroy",
+							"objectClass": "keyGreen",
+							"sid": 741473533157592
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "enemy",
+							"sid": 979730674642091,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "Self.Y-1000",
+								"time": "0.2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 351762076240391
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -1135,6 +1248,15 @@
 					}
 				},
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 701442687922182,
+					"parameters": {
+						"variable": "VieneMundo2",
+						"value": "false"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 270309363837374,
@@ -1243,9 +1365,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "DialogText",
-					"sid": 415671335120774,
+					"sid": 479363399271490,
 					"parameters": {
-						"text": "\"Porfin !! hay tengo algo suculento, estaba el bosque más tranquilo de lo que pensaba... bueno ahora cojo la comida y devuelta para mi casa (a la puerta del mundo1)\""
+						"text": "\"Porfin !! encontre algo suculento, estaba el bosque más tranquilo de lo que pensaba... bueno ahora cojo la comida y devuelta para mi casa (a la puerta del mundo1)\""
 					}
 				},
 				{
@@ -1274,55 +1396,6 @@
 				}
 			],
 			"sid": 484112789048206
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "PlayerHitBox",
-					"sid": 787151700485248,
-					"parameters": {
-						"object": "PuertaVerdeCerrada"
-					}
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 423359796957477,
-					"parameters": {
-						"variable": "TieneComida"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 796413991692391,
-					"parameters": {
-						"audio-file": "OpenDoor",
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "PuertaCASAcerrada",
-					"sid": 102980686106056
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "PuertaAbierta",
-					"sid": 377137259387030,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 584645833426777
 		},
 		{
 			"eventType": "block",
@@ -1365,6 +1438,15 @@
 					"sid": 541305354285599,
 					"parameters": {
 						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 317845664041220,
+					"parameters": {
+						"variable": "VieneMundo2",
+						"value": "false"
 					}
 				},
 				{
@@ -1422,20 +1504,20 @@
 					}
 				},
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 285108516248140,
+					"parameters": {
+						"variable": "VieneMundo2",
+						"value": "true"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 250922573207800,
 					"parameters": {
 						"layout": "Layout 2"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "PlayerHitBox",
-					"sid": 668107595711256,
-					"parameters": {
-						"x": "3859",
-						"y": " 1514"
 					}
 				}
 			],
@@ -1482,6 +1564,76 @@
 				}
 			],
 			"sid": 249512459845723
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 241918664186214,
+					"parameters": {
+						"object": "PuertaCASAcerrada"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 312634084524474,
+					"parameters": {
+						"variable": "TieneComida"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 561058303684425,
+					"parameters": {
+						"audio-file": "OpenDoor",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PuertaCASAcerrada",
+					"sid": 431755853585055
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PuertaAbierta",
+					"sid": 251567576115043,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 497855626346504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 543961284781048,
+					"parameters": {
+						"variable": "TieneComida"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PuertaVerdeCerrada",
+					"sid": 132300199149558
+				}
+			],
+			"sid": 477621226522829
 		}
 	],
 	"sid": 222418204673232
