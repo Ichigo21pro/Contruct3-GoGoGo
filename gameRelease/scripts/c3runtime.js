@@ -4586,18 +4586,25 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Sin,
 		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Audio.Acts.Stop,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.System.Acts.SetBoolVar,
+		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.Text.Acts.SetVisible,
+		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Sprite.Acts.SetPos,
-		C3.Plugins.Sprite.Exps.X,
-		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Behaviors.Tween.Acts.TweenOneProperty,
+		C3.Plugins.Sprite.Exps.Y,
+		C3.Plugins.Mouse.Cnds.OnClick,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Acts.SetMirrored,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.Sprite.Acts.Destroy,
-		C3.Plugins.Audio.Acts.Play,
 		C3.Behaviors.Platform.Cnds.OnLand,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Sprite.Acts.SetSize,
@@ -4605,7 +4612,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Cnds.IsMoving,
 		C3.Behaviors.Platform.Cnds.OnStop,
 		C3.Behaviors.Platform.Cnds.IsJumping,
-		C3.Plugins.Audio.Acts.Stop,
 		C3.Behaviors.Platform.Cnds.OnJump,
 		C3.Behaviors.Platform.Cnds.IsFalling,
 		C3.Behaviors.Platform.Acts.SetVectorY,
@@ -4621,9 +4627,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Fade.Acts.StartFade,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
 		C3.Plugins.System.Acts.Wait,
-		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Behaviors.Tween.Acts.TweenTwoProperties,
 		C3.Plugins.Sprite.Exps.Width,
 		C3.Plugins.Sprite.Exps.Height,
@@ -4662,8 +4666,21 @@ self.C3_JsPropNameTable = [
 	{keyGreen: 0},
 	{VidaText: 0},
 	{Audio: 0},
+	{PlayerDialog: 0},
+	{DiseñoSinTítulo: 0},
+	{DialogText: 0},
+	{TipText: 0},
+	{startDialog: 0},
+	{PuertaCASAcerrada: 0},
+	{PuertaCasa: 0},
+	{comida: 0},
+	{Dialog2: 0},
+	{PuertaMundo1: 0},
 	{Money: 0},
-	{VidaJugador: 0}
+	{VidaJugador: 0},
+	{TerminoDialogo: 0},
+	{TieneComida: 0},
+	{VieneMundo2: 0}
 ];
 
 self.InstanceType = {
@@ -4686,7 +4703,17 @@ self.InstanceType = {
 	PuertaSiguenteMundo: class extends self.ISpriteInstance {},
 	keyGreen: class extends self.ISpriteInstance {},
 	VidaText: class extends self.ITextInstance {},
-	Audio: class extends self.IInstance {}
+	Audio: class extends self.IInstance {},
+	PlayerDialog: class extends self.ISpriteInstance {},
+	DiseñoSinTítulo: class extends self.ISpriteInstance {},
+	DialogText: class extends self.ITextInstance {},
+	TipText: class extends self.ITextInstance {},
+	startDialog: class extends self.ISpriteInstance {},
+	PuertaCASAcerrada: class extends self.ISpriteInstance {},
+	PuertaCasa: class extends self.ISpriteInstance {},
+	comida: class extends self.ISpriteInstance {},
+	Dialog2: class extends self.ISpriteInstance {},
+	PuertaMundo1: class extends self.ISpriteInstance {}
 }
 }
 
@@ -4787,6 +4814,19 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
+		() => "IntroMusic",
+		() => -10,
+		() => 0,
+		() => "",
+		() => 3859,
+		() => 1514,
+		() => "Que!!! porque hay monstruos aqui!!! Mi casa!!!",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() - 1000);
+		},
+		() => 0.2,
+		() => 1,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
@@ -4808,8 +4848,6 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() - 55);
 		},
 		() => 10,
-		() => 0,
-		() => "",
 		() => "stand",
 		() => 48.347107,
 		() => 55.785124,
@@ -4821,12 +4859,14 @@ self.C3_ExpressionFuncs = [
 		() => "moving",
 		() => "fall",
 		() => -1000,
-		() => 1,
 		() => 0.1,
 		() => 1.5,
 		() => -500,
 		() => -800,
 		() => 2,
+		() => "Enserio?? nada de comida... Tendre que abrir la puerta para encontrar algo en el bosque...",
+		() => "Porfin !! encontre algo suculento, estaba el bosque más tranquilo de lo que pensaba... bueno ahora cojo la comida y devuelta para mi casa (a la puerta del mundo1)",
+		() => -20,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() + 200);
@@ -4835,7 +4875,11 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() * 1.1);
 		},
-		() => 0.5
+		() => 0.5,
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() * 1.3);
+		}
 ];
 
 
