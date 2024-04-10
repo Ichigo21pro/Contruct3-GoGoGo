@@ -138,7 +138,8 @@
 			"comida",
 			"Dialog2",
 			"PuertaMundo1",
-			"PuertaCerrada"
+			"PuertaCerrada",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -153,7 +154,8 @@
 			"Layout 1",
 			"Layout 2",
 			"Layout 3",
-			"Layout 4"
+			"Layout 4",
+			"Layout 5"
 		],
 		"subfolders": []
 	},
@@ -247,6 +249,14 @@
 					"name": "Die.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 792854598903933,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "diePlayer.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 820688874795660,
 					"file-info": {
 						"purpose": "none"
 					}

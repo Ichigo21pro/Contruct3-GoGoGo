@@ -985,9 +985,42 @@
 			],
 			"actions": [
 				{
-					"id": "restart-layout",
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 912152075286081,
+					"parameters": {
+						"audio-file": "diePlayer",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerAnimation",
+					"sid": 490276935704176
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerHitBox",
+					"sid": 336190875516001
+				},
+				{
+					"id": "wait",
 					"objectClass": "System",
-					"sid": 353448027543221
+					"sid": 401449817662948,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 473908354405241,
+					"parameters": {
+						"layout": "Layout 5"
+					}
 				}
 			],
 			"sid": 497856194984873
@@ -1667,6 +1700,59 @@
 				}
 			],
 			"sid": 477621226522829
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 532940598082982,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 922977291647156,
+					"parameters": {
+						"audio-file": "levelPass",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 573773587421033,
+					"parameters": {
+						"animation": "\"press\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 122749746997198,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 515652835369257,
+					"parameters": {
+						"layout": "Layout 5"
+					}
+				}
+			],
+			"sid": 435935150164519
 		}
 	],
 	"sid": 222418204673232
