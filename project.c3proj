@@ -233,6 +233,22 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "jumpEnemy.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 133114480710238,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Die.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 792854598903933,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
