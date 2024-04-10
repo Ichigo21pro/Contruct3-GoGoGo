@@ -137,7 +137,8 @@
 			"PuertaCasa",
 			"comida",
 			"Dialog2",
-			"PuertaMundo1"
+			"PuertaMundo1",
+			"PuertaCerrada"
 		],
 		"subfolders": []
 	},
