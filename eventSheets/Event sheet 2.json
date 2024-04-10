@@ -22,6 +22,16 @@
 			"sid": 119285330601334
 		},
 		{
+			"eventType": "variable",
+			"name": "TerminoDialogo",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 575905637215391
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -42,6 +52,18 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
+					"sid": 263833488176101,
+					"parameters": {
+						"audio-file": "MusicWorld1",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
 					"sid": 523879733513083,
 					"parameters": {
 						"audio-file": "MusicWorld1",
@@ -50,9 +72,92 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 655787355526062,
+					"parameters": {
+						"variable": "TerminoDialogo",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 683493719490479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 977538970558305,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 388759580506213,
+					"parameters": {
+						"variable": "TerminoDialogo",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 374274181648011
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 665229076805694,
+					"parameters": {
+						"variable": "TerminoDialogo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "DiseñoSinTítulo",
+					"sid": 297423964527802,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DialogText",
+					"sid": 971163893348992,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TipText",
+					"sid": 972280630378047,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PlayerDialog",
+					"sid": 656777195590965,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 854298506873714
 		},
 		{
 			"eventType": "block",
@@ -997,6 +1102,71 @@
 				}
 			],
 			"sid": 728195561190853
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
+					"sid": 781688699162231,
+					"parameters": {
+						"object": "startDialog"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 445983854194511,
+					"parameters": {
+						"variable": "TerminoDialogo",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DiseñoSinTítulo",
+					"sid": 912974286713497,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "DialogText",
+					"sid": 691361800739436,
+					"parameters": {
+						"text": "\"Enserio?? nada de comida... Tendre que abrir la puerta para encontrar algo en el bosque...\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DialogText",
+					"sid": 796173363515418,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TipText",
+					"sid": 975510038545518,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PlayerDialog",
+					"sid": 161188452334490,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 137988225749559
 		}
 	],
 	"sid": 222418204673232

@@ -127,7 +127,12 @@
 			"PuertaSiguenteMundo",
 			"keyGreen",
 			"VidaText",
-			"Audio"
+			"Audio",
+			"PlayerDialog",
+			"DiseñoSinTítulo",
+			"DialogText",
+			"TipText",
+			"startDialog"
 		],
 		"subfolders": []
 	},
