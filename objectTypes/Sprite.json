@@ -24,6 +24,54 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"imageSpriteId": 6656401,
+						"collisionPoly": {
+							"points": [
+								0.32,
+								0,
+								0.68,
+								0,
+								0.78,
+								0.034482758620689655,
+								0.92,
+								0.1724137931034483,
+								1,
+								0.6896551724137931,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.6896551724137931,
+								0.1,
+								0.13793103448275862,
+								0.22,
+								0.034482758620689655
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 831941140454848,
+				"name": "stand",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 29,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
 						"imageSpriteId": 9186054,
 						"collisionPoly": {
 							"points": [
@@ -159,54 +207,6 @@
 				],
 				"sid": 207960450902178,
 				"name": "press",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 50,
-						"height": 29,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"imageSpriteId": 6656401,
-						"collisionPoly": {
-							"points": [
-								0.32,
-								0,
-								0.68,
-								0,
-								0.78,
-								0.034482758620689655,
-								0.92,
-								0.1724137931034483,
-								1,
-								0.6896551724137931,
-								1,
-								1,
-								0,
-								1,
-								0,
-								0.6896551724137931,
-								0.1,
-								0.13793103448275862,
-								0.22,
-								0.034482758620689655
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
-					}
-				],
-				"sid": 831941140454848,
-				"name": "stand",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
