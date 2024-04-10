@@ -528,8 +528,8 @@
 						}
 					},
 					"world": {
-						"x": 3171,
-						"y": 1378,
+						"x": 48,
+						"y": 1918,
 						"width": 48.347107438016195,
 						"height": 55.78512396694191,
 						"originX": 0.5,
@@ -771,8 +771,8 @@
 						}
 					},
 					"world": {
-						"x": 59,
-						"y": 1820,
+						"x": 48.73683763538581,
+						"y": 1845.1913985313256,
 						"width": 45,
 						"height": 54,
 						"originX": 0.5,
@@ -973,6 +973,64 @@
 						"y": 1440.4836852922365,
 						"width": 64,
 						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DiseñoSinTítulo",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 31,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3935.649773042048,
+						"y": 1440.2333772083641,
+						"width": 64,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PuertaSiguenteMundo",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3960.374586026289,
+						"y": 1439.600608132861,
+						"width": 49.40182650981342,
+						"height": 193.552606994622,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

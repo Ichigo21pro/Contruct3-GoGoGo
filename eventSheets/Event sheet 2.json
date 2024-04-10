@@ -147,7 +147,7 @@
 				{
 					"id": "on-landed",
 					"objectClass": "PlayerHitBox",
-					"sid": 454398846118605,
+					"sid": 311640187172426,
 					"behaviorType": "Platform"
 				}
 			],
@@ -155,14 +155,63 @@
 				{
 					"id": "set-animation",
 					"objectClass": "PlayerAnimation",
-					"sid": 219104516411036,
+					"sid": 839215271169040,
 					"parameters": {
 						"animation": "\"stand\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerHitBox",
+					"sid": 380082327085403,
+					"parameters": {
+						"width": "48.347107 ",
+						"height": "55.785124"
+					}
 				}
 			],
-			"sid": 438214947832331
+			"sid": 144628931641658
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "PlayerHitBox",
+					"sid": 396800151647127,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 493872774120681,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 495564231526286,
+					"parameters": {
+						"animation": "\"rollingStand\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerHitBox",
+					"sid": 926440626442957,
+					"parameters": {
+						"width": "48.347107 ",
+						"height": "40"
+					}
+				}
+			],
+			"sid": 393201128342940
 		},
 		{
 			"eventType": "block",
@@ -170,7 +219,7 @@
 				{
 					"id": "is-moving",
 					"objectClass": "PlayerHitBox",
-					"sid": 601556588038460,
+					"sid": 307636264773231,
 					"behaviorType": "Platform"
 				}
 			],
@@ -178,14 +227,63 @@
 				{
 					"id": "set-animation",
 					"objectClass": "PlayerAnimation",
-					"sid": 633700115394144,
+					"sid": 672529808500437,
 					"parameters": {
 						"animation": "\"walk\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerHitBox",
+					"sid": 925833280822240,
+					"parameters": {
+						"width": "48.347107 ",
+						"height": "55.785124"
+					}
 				}
 			],
-			"sid": 311651765792666
+			"sid": 852229839228712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "PlayerHitBox",
+					"sid": 931610248066526,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 298073170702070,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 898819560910575,
+					"parameters": {
+						"animation": "\"moveRoll\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerHitBox",
+					"sid": 528874851387775,
+					"parameters": {
+						"width": "48.347107 ",
+						"height": "40"
+					}
+				}
+			],
+			"sid": 870052764794129
 		},
 		{
 			"eventType": "block",
@@ -206,9 +304,58 @@
 						"animation": "\"stand\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerHitBox",
+					"sid": 687653416851490,
+					"parameters": {
+						"width": "48.347107 ",
+						"height": "55.785124"
+					}
 				}
 			],
 			"sid": 837792969243432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-stopped",
+					"objectClass": "PlayerHitBox",
+					"sid": 599060021080380,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 935296082656510,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerAnimation",
+					"sid": 596007633522737,
+					"parameters": {
+						"animation": "\"rollingStand\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerHitBox",
+					"sid": 887672883160858,
+					"parameters": {
+						"width": "48.347107 ",
+						"height": "40"
+					}
+				}
+			],
+			"sid": 901354280027206
 		},
 		{
 			"eventType": "block",
@@ -228,6 +375,15 @@
 					"parameters": {
 						"animation": "\"jump\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerHitBox",
+					"sid": 486159083680187,
+					"parameters": {
+						"width": "48.347107 ",
+						"height": "55.785124"
 					}
 				}
 			],
@@ -251,6 +407,15 @@
 					"parameters": {
 						"animation": "\"fall\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "PlayerHitBox",
+					"sid": 457704800315118,
+					"parameters": {
+						"width": "48.347107 ",
+						"height": "55.785124"
 					}
 				}
 			],
@@ -426,14 +591,14 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "PlayerHitBox",
-					"sid": 710632649840829,
+					"sid": 232525774450263,
 					"parameters": {
 						"object": "greenJewel"
 					}
 				}
 			],
 			"actions": [],
-			"sid": 119073070955953,
+			"sid": 867854682254060,
 			"children": [
 				{
 					"eventType": "block",
@@ -441,7 +606,7 @@
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "greenJewel",
-							"sid": 618848420731583,
+							"sid": 391265628335947,
 							"parameters": {
 								"instance-variable": "GemaVerdeTocada"
 							},
@@ -452,7 +617,7 @@
 						{
 							"id": "set-fade-out-time",
 							"objectClass": "greenJewel",
-							"sid": 518128363305167,
+							"sid": 872486268431682,
 							"behaviorType": "Fade",
 							"parameters": {
 								"fade-out-time": "1"
@@ -461,7 +626,7 @@
 						{
 							"id": "set-fade-in-time",
 							"objectClass": "greenJewel",
-							"sid": 786313452663066,
+							"sid": 597140527290511,
 							"behaviorType": "Fade",
 							"parameters": {
 								"fade-in-time": "0"
@@ -470,13 +635,13 @@
 						{
 							"id": "start-fade",
 							"objectClass": "greenJewel",
-							"sid": 771826781586765,
+							"sid": 186093796077558,
 							"behaviorType": "Fade"
 						},
 						{
 							"id": "set-vector-y",
 							"objectClass": "PlayerHitBox",
-							"sid": 424154584578248,
+							"sid": 128674974024046,
 							"behaviorType": "Platform",
 							"parameters": {
 								"vector-y": "-800"
@@ -485,14 +650,14 @@
 						{
 							"id": "set-boolean-instvar",
 							"objectClass": "greenJewel",
-							"sid": 324163901142821,
+							"sid": 347664704888258,
 							"parameters": {
 								"instance-variable": "GemaVerdeTocada",
 								"value": "true"
 							}
 						}
 					],
-					"sid": 283846840933706
+					"sid": 344901773140818
 				}
 			]
 		},
@@ -520,7 +685,7 @@
 				{
 					"id": "set-fade-in-time",
 					"objectClass": "greenJewel",
-					"sid": 693772125531945,
+					"sid": 306088633625276,
 					"behaviorType": "Fade",
 					"parameters": {
 						"fade-in-time": "1"
@@ -529,7 +694,7 @@
 				{
 					"id": "set-fade-out-time",
 					"objectClass": "greenJewel",
-					"sid": 139903362291257,
+					"sid": 624673697218124,
 					"behaviorType": "Fade",
 					"parameters": {
 						"fade-out-time": "0"
@@ -538,7 +703,7 @@
 				{
 					"id": "start-fade",
 					"objectClass": "greenJewel",
-					"sid": 620218532688721,
+					"sid": 332403482982258,
 					"behaviorType": "Fade"
 				},
 				{

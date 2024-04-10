@@ -115,7 +115,9 @@
 			"ScoreText",
 			"limitWater",
 			"enemy",
-			"PuertaVerdeCerrada"
+			"PuertaVerdeCerrada",
+			"DiseñoSinTítulo",
+			"PuertaSiguenteMundo"
 		],
 		"subfolders": []
 	},
