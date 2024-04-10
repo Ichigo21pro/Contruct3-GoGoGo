@@ -30,7 +30,28 @@
 					"sid": 760483766551431
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 959102243026741,
+					"parameters": {
+						"tag": "\"IntroMusic\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 523879733513083,
+					"parameters": {
+						"audio-file": "MusicWorld1",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
 			"sid": 683493719490479
 		},
 		{

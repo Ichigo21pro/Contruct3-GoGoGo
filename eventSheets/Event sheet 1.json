@@ -12,9 +12,21 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 481318360240514,
+					"parameters": {
+						"audio-file": "IntroMusic",
+						"loop": "looping",
+						"volume": "-20",
+						"stereo-pan": "0",
+						"tag-optional": "\"IntroMusic\""
+					}
+				},
+				{
 					"id": "tween-one-property",
 					"objectClass": "DUDE",
-					"sid": 212667304762543,
+					"sid": 238986201841263,
 					"behaviorType": "Tween",
 					"parameters": {
 						"tags": "\"\"",
@@ -64,6 +76,44 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 560018702005596,
+					"parameters": {
+						"audio-file": "button",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "PlayBoron",
+					"sid": 354017868556917,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.Width*1.3",
+						"end-y": "Self.Height*1.3",
+						"time": "0.2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 795952856602245,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",

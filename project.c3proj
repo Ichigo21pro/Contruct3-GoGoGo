@@ -214,12 +214,37 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "button.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 995062571223196,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "IntroMusic.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 290749481919633,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MusicWorld1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 685663905902592,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
