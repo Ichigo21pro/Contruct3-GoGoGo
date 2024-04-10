@@ -1384,6 +1384,69 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "PlayerHitBox",
+					"sid": 972947217051157,
+					"parameters": {
+						"object": "PuertaMundo1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 981959622470132,
+					"parameters": {
+						"audio-file": "levelPass",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerAnimation",
+					"sid": 634394162785999
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerHitBox",
+					"sid": 538104068831401
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 262226919485433,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 250922573207800,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "PlayerHitBox",
+					"sid": 668107595711256,
+					"parameters": {
+						"x": "3859",
+						"y": " 1514"
+					}
+				}
+			],
+			"sid": 981527497243076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerHitBox",
 					"sid": 691805990879879,
 					"parameters": {
 						"object": "comida"
