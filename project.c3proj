@@ -141,7 +141,8 @@
 			"PuertaCerrada",
 			"Sprite",
 			"sky",
-			"nube"
+			"nube",
+			"backIntro"
 		],
 		"subfolders": []
 	},
