@@ -1381,6 +1381,11 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "startDialog",
+					"sid": 833925338855655
 				}
 			],
 			"sid": 137988225749559
@@ -1446,6 +1451,11 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Dialog2",
+					"sid": 862129361134582
 				}
 			],
 			"sid": 484112789048206
