@@ -140,7 +140,8 @@
 			"PuertaMundo1",
 			"PuertaCerrada",
 			"Sprite",
-			"sky"
+			"sky",
+			"nube"
 		],
 		"subfolders": []
 	},
