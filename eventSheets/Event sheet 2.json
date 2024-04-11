@@ -244,12 +244,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 977538970558305,
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 764282156723213,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
+						"key": 32
 					}
 				}
 			],

@@ -4705,7 +4705,7 @@
 				{
 					"type": "TipText",
 					"properties": {
-						"text": "Click para cerrar...",
+						"text": "espacio para cerrar...",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 8.2,
@@ -4731,8 +4731,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 678,
-						"y": 441,
+						"x": 666.7302779864763,
+						"y": 439.49737039819684,
 						"width": 135.4545454545455,
 						"height": 24.545454545454504,
 						"originX": 0,
