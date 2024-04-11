@@ -4597,11 +4597,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Plugins.Sprite.Exps.Y,
-		C3.Plugins.Mouse.Cnds.OnClick,
+		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
-		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Acts.SetMirrored,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.AddVar,
@@ -4677,6 +4676,9 @@ self.C3_JsPropNameTable = [
 	{PuertaMundo1: 0},
 	{PuertaCerrada: 0},
 	{Sprite: 0},
+	{sky: 0},
+	{nube: 0},
+	{backIntro: 0},
 	{Money: 0},
 	{VidaJugador: 0},
 	{TerminoDialogo: 0},
@@ -4716,7 +4718,10 @@ self.InstanceType = {
 	Dialog2: class extends self.ISpriteInstance {},
 	PuertaMundo1: class extends self.ISpriteInstance {},
 	PuertaCerrada: class extends self.ISpriteInstance {},
-	Sprite: class extends self.ISpriteInstance {}
+	Sprite: class extends self.ISpriteInstance {},
+	sky: class extends self.ISpriteInstance {},
+	nube: class extends self.ISpriteInstance {},
+	backIntro: class extends self.ISpriteInstance {}
 }
 }
 
