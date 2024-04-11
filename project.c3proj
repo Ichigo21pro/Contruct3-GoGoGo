@@ -139,7 +139,8 @@
 			"Dialog2",
 			"PuertaMundo1",
 			"PuertaCerrada",
-			"Sprite"
+			"Sprite",
+			"sky"
 		],
 		"subfolders": []
 	},
